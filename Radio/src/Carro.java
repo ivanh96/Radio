@@ -49,15 +49,19 @@ public class Carro implements Radio{
     }
     
     public void ON_OFF() {
-        
+        estado = getEstado();
+        estado != estado;
+        setEstado(estado);
     }
 
     public void AM_FM() {
-        
+        getFrecuencia();
+        frecuencia != frecuencia;
+        setFrecuencia(frecuencia);
     }
 
     public void Cambio_de_Emisora(boolean frecuencia) {
-        
+ 
     }
 
     public void Guardar_Emisora(int boton) {

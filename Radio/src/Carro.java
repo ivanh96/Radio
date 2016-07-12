@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Carro implements Radio{
     public Carro() {}
-    private float emisora;
+    private double emisora;
     private boolean estado;
     private boolean frecuencia;
     private double[] botonesAM;
@@ -54,15 +54,20 @@ public class Carro implements Radio{
 
     public void AM_FM() {
         frecuencia = !frecuencia;
-        if (frecuencia == false){
-            emisora = 530;
+        if (frecuencia == true){
+            emisora = 89.7;
         } else {
-            emisora = 89.9;
+            emisora = 530;
         }
     }
 
     public void Cambio_de_Emisora(boolean frecuencia) {
- 
+        if (frecuencia == true){
+            emisora = emisora + 0.2;
+        }
+        if (frecuencia == false){
+            emisora = emisora + 10;
+        }
     }
 
     public void Guardar_Emisora(int boton) {

@@ -17,7 +17,7 @@ public class Principal {
     	String f = "";
     	int i = 0;
 
-		InputStreamReader input = new InputStreamReader(System.in);
+	InputStreamReader input = new InputStreamReader(System.in); /*consultado de http://www.scit.wlv.ac.uk/~in8297/CP4044/workshops/w03.html*/
         BufferedReader console = new BufferedReader(input);
     	
 

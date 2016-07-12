@@ -50,13 +50,13 @@ public class Carro implements Radio{
     
     public void ON_OFF() {
         estado = getEstado();
-        estado != estado;
+        estado = !estado;
         setEstado(estado);
     }
 
     public void AM_FM() {
         getFrecuencia();
-        frecuencia != frecuencia;
+        frecuencia = !frecuencia;
         setFrecuencia(frecuencia);
     }
 

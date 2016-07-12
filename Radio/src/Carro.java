@@ -8,7 +8,7 @@ public class Carro implements Radio{
     private double[] botonesAM;
     private double[] botonesFM;
     
-    public void setEmisora(float emisora){
+    public void setEmisora(double emisora){
         this.emisora = emisora;
     }
     
@@ -62,12 +62,7 @@ public class Carro implements Radio{
     }
 
     public void Cambio_de_Emisora(boolean frecuencia) {
-        if (frecuencia == true){
-            emisora = emisora + 0.2;
-        }
-        if (frecuencia == false){
-            emisora = emisora + 10;
-        }
+        
     }
 
     public void Guardar_Emisora(int boton) {
